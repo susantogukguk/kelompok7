@@ -1,0 +1,167 @@
+* {
+    font-family: viga;
+}
+
+
+/* font */
+@font-face {
+    font-family: 'Viga-Regular';
+    src: url('../font/Viga-Regular.ttf') format('ttf'),
+         url('../font/OFL.txt') format('OFL');
+    font-weight: normal;
+    font-style: normal;
+}
+/* akhir font */
+
+/* navbar */
+.justify-content-center {
+    margin: auto;
+}
+
+.navbar {
+    position: relative;
+    z-index: 2;
+}
+
+#offcanvasNavbarLabel {
+    margin-top: 15px;
+    text-align: center;
+    color: white;
+    font-size: 25px;
+}
+
+.nav-link {
+    text-transform: uppercase;
+}
+
+.navbar-brand {
+    font-size: 32px;
+}
+/* akhir navbar */
+
+/* Jumbotron */
+.jumbotron{
+    background-image: url(../Img/jumbotron-bg.jpg);
+    background-size: cover;
+    height: 650px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    margin-top: -75px;
+    height: 55px; 
+}
+
+.jumbotron::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient( to top, rgba(0,0,0,1), rgba(0,0,0,0));
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+/* akhir bagian jumbotron */
+
+/* biografi-developer */
+
+/* akhir biografi-developer */
+
+/* bagian fact */
+.header-biografi {
+    margin-top: 100px;
+    text-align: center;
+    padding-bottom: 65px;
+}
+
+.bxs-like {
+    font-size: 80px;
+    padding-bottom: 55px;
+}
+
+.bxs-timer {
+    font-size: 80px;
+    padding-bottom: 55px;
+}
+
+.bxs-check-shield {
+    font-size: 80px;
+    padding-bottom: 55px;
+}
+
+.bxs-user-plus {
+    font-size: 80px;
+    padding-bottom: 55px;
+}
+.span-icon {
+    padding-left: 20px;
+}
+/* akhir bagian fact */
+
+/* bagian-project-dev */
+.btn-box a {
+    padding: 15px 15px;
+    margin-left: 55px;
+    margin-right: 55px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+    width: 150px;
+    height: 100%;
+    background: #00abf0;
+    border: 2px solid #00abf0;
+    border-radius: 16px;
+    font-size: 19px;
+    color: #081b29;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 2px;
+    transition: .5s;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.btn-box a:nth-child(1) {
+    background: transparent;
+    color: #00abf0;
+}
+
+.btn-box a:nth-child(2) {
+    background: transparent;
+    color: #00abf0;
+}
+
+.btn-box a:nth-child(1):hover {
+    color: #081b29;
+}
+
+.btn-box a:nth-child(1)::before {
+    color: #00abf0;
+}
+
+.btn-box a:nth-child(2):hover {
+    color: #081b29;
+}
+
+.btn-box a:nth-child(2)::before {
+    color: #00abf0;
+}
+
+.btn-box a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #00abf0;
+    z-index: -1;
+    transition: .5s;
+    border-radius: 10px;
+}
+
+.btn-box a:hover::before {
+    width: 100%;
+}
+/* akhir bagian project-dev */
