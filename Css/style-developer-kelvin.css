@@ -1,0 +1,317 @@
+* {
+    font-family: viga;
+}
+
+.tombol{
+    margin-top: 15px;
+    font-family: viga;
+    border-radius: 45px;
+    margin-bottom: 35px;
+}
+
+/* font */
+@font-face {
+    font-family: 'Viga-Regular';
+    src: url('../font/Viga-Regular.ttf') format('ttf'),
+         url('../font/OFL.txt') format('OFL');
+    font-weight: normal;
+    font-style: normal;
+}
+/* akhir font */
+
+/* navbar */
+.justify-content-center {
+    margin: auto;
+}
+
+.navbar {
+    position: relative;
+    z-index: 2;
+}
+
+#offcanvasNavbarLabel {
+    margin-top: 15px;
+    text-align: center;
+    color: white;
+    font-size: 25px;
+}
+
+.nav-link {
+    text-transform: uppercase;
+}
+
+.navbar-brand {
+    font-size: 32px;
+}
+/* akhir navbar */
+
+/* Jumbotron */
+.jumbotron{
+    background-image: url(../Img/jumbotron-bg.jpg);
+    background-size: cover;
+    height: 650px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    margin-top: -75px;
+    height: 55px; 
+}
+
+.jumbotron::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient( to top, rgba(0,0,0,1), rgba(0,0,0,0));
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+/* akhir bagian jumbotron */
+
+/* bagian profil */
+.profil {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.profil-content {
+    max-width: 600px;
+}
+
+.profil-content h1 {
+    font-size: 59px;
+    font-weight: 700;
+}
+
+.profil-content h3 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #00abf0;
+    line-height: 1.5;
+}
+
+.profil-content p {
+    font-size: 18px;
+    margin: 20px 0 45px;
+}
+
+.profil-content .btn-box {
+    justify-content: space-between;
+    display: flex;
+    width: 345px;
+    height: 50px;
+}
+
+.btn-box a {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+    width: 150px;
+    height: 100%;
+    background: #00abf0;
+    border: 2px solid #00abf0;
+    border-radius: 16px;
+    font-size: 19px;
+    color: #081b29;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: .5s;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.btn-box a:nth-child(1) {
+    background: transparent;
+    color: #00abf0;
+}
+
+.btn-box a:nth-child(2) {
+    background: transparent;
+    color: #00abf0;
+}
+
+.btn-box a:nth-child(1):hover {
+    color: #081b29;
+}
+
+.btn-box a:nth-child(1)::before {
+    color: #00abf0;
+}
+
+.btn-box a:nth-child(2):hover {
+    color: #081b29;
+}
+
+.btn-box a:nth-child(2)::before {
+    color: #00abf0;
+}
+
+.btn-box a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #00abf0;
+    z-index: -1;
+    transition: .5s;
+    border-radius: 10px;
+}
+
+.btn-box a:hover::before {
+    width: 100%;
+}
+
+/* bagian profil-sci */
+.profil-sci {
+    position: absolute;
+    bottom: -75px;
+    width: 175px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.profil-sci a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    background: transparent;
+    border: 2px solid #00abf0;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #00abf0;
+    text-decoration: none;
+    overflow: hidden;
+    z-index: 1;
+    transition: .5s;
+}
+
+.profil-sci a:hover {
+    color: #081b29;
+}
+
+.profil-sci a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #00abf0;
+    z-index: -1;
+    transition: .5s;
+}
+
+.profil-sci a:hover::before {
+    width: 100%;
+}
+/* akhir bagian profil-sci */
+
+/* bagian image-profil */
+/* akhir image-profil */
+/* akhir bagian profil */
+
+/* bagian profil-skill */
+.kotak-basic {
+    border: 2px solid black;
+    border-radius: 3%;
+    transition: 1s;
+}
+
+.kotak-basic h4 {
+    padding-left: 15px;
+}
+
+.persen-skill {
+    float: right;
+    padding-right: 15px;
+}
+
+.garis-persen {
+    margin-left: 15px;
+    border: 2px solid rgb(180, 180, 180);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    text-align: center;
+    width: 95%;
+    transition: 1s;
+}
+
+.kotak-basic:hover {
+    transform: scale(.9);
+    color: #00abf0;
+    border: 2px solid #00abf0;
+}
+
+#batang-persen-satu {
+    width: 95%;
+}
+
+#batang-persen-dua {
+    width: 84%;
+}
+
+#batang-persen-tiga {
+    width: 11%;
+}
+
+#batang-persen-empat {
+    width: 79%;
+}
+
+#batang-persen-lima {
+    width: 72%;
+}
+
+#batang-persen-enam {
+    width: 33%;
+}
+
+#batang-persen-tujuh {
+    width: 65%;
+}
+
+#batang-persen-delapan {
+    width: 21%;
+}
+/* akhir bagian profil-skill */
+
+/* bagian about developer */
+.image-dev {
+    border: 2px solid skyblue;
+    border-radius: 50%;
+    margin-left: 50px;
+    width: 70%;
+    height: 70%;
+}
+/* akhir bagian about developer */
+
+/* bagian footer */
+.atas-footer {
+    margin-top: 265px;
+    margin-bottom: -55px;
+}
+
+.div-footer {
+    margin-top: 250px;
+    height: 250px;
+}
+
+.text-white p {
+    font-size: large;
+    letter-spacing: 1px;
+}
+
+/* akhir bagian footer */
+
+/* diyoutube, video personal portfolio website using html dan css */

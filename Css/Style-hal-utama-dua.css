@@ -1,0 +1,220 @@
+* {
+    font-family: viga;
+}
+
+.tombol{
+    margin-top: 15px;
+    font-family: viga;
+    border-radius: 45px;
+    margin-bottom: 35px;
+}
+
+/* font */
+@font-face {
+    font-family: 'Viga-Regular';
+    src: url('../font/OFL.txt') format('OFL'),
+         url('../font/OFL.txt') format('OFL');
+    font-weight: normal;
+    font-style: normal;
+}
+/* akhir font */
+
+/* navbar */
+.justify-content-center {
+    margin: auto;
+}
+
+.navbar {
+    position: relative;
+    z-index: 2;
+}
+
+#offcanvasNavbarLabel {
+    margin-top: 15px;
+    text-align: center;
+    color: white;
+    font-size: 25px;
+}
+
+.nav-link {
+    text-transform: uppercase;
+}
+
+.navbar-brand {
+    font-size: 32px;
+}
+/* akhir navbar */
+
+/* Jumbotron */
+.jumbotron{
+    background-image: url(../Img/jumbotron-bg.jpg);
+    background-size: cover;
+    height: 650px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    margin-top: -75px;
+    height: 55px; 
+}
+
+.jumbotron::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient( to top, rgba(0,0,0,1), rgba(0,0,0,0));
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+/* akhir bagian jumbotron */
+
+/* image carousel */
+.image-carousel-satu {
+    width: 1200px;
+    height: 538px;
+}
+
+.image-carousel-dua {
+    width: 1200px;
+    height: 538px;
+}
+
+.image-carousel-tiga {
+    width: 1200px;
+    height: 538px;
+}
+/* akhir bagian carousel */
+
+/* bagian services */
+
+.btn-box {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+    width: 150px;
+    height: 100%;
+    border: 2px solid #00abf0;
+    border-radius: 16px;
+    font-size: 19px;
+    color: #21272c;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: .5s;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.heading {
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 10rem ;
+    margin-bottom: 8rem ;
+}
+
+.services h2 {
+    margin-bottom: 5rem;
+}
+
+.services-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: .5rem;
+}
+
+.services-container .services-box {
+    flex: 30rem;
+    padding: 1rem .1rem 1rem;
+    border-radius: 2rem;
+    text-align: center;
+    border: .1rem solid #353d42;
+    transition: .5s ease;
+}
+
+.services-container .services-box:hover {
+    border-color: #73c1f1;
+    transform: scale(.8);
+}
+
+.services-box {
+    font-size: 5rem;
+    color: #030303;
+}
+
+.services-box h3 {
+    font-size: 1rem;
+}
+
+.services-box p {
+    font-size: 1.5rem;
+    margin: .5rem 0 .5rem;
+}
+/* akhir services */
+
+/* bagian galery */
+.btn-galery {
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+    width: 150px;
+    height: 50px;
+    border: 2px solid;
+    border-radius: 15px;
+    color: #000000;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: .5s;
+    z-index: 1;
+}
+
+.btn-galery:hover {
+    transform: scale(.9);
+    color: #00abf0;
+    width: 150px;
+    height: 50px;
+    border: 2px solid #00abf0;
+}
+
+.galery-space {
+    margin-top: 120px;
+    padding-right: 15px;
+    text-align: center;
+}
+
+.galery-space h3 {
+    font-size: 52px;
+    font-weight: 200;
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+
+.galery-space h3 {
+    font-weight: 500;
+}
+
+.galery-space p {
+    font-size: 18px;
+    color: #645e5e;
+    font-weight: 200;
+    margin: 30px 0;
+}
+/* akhir bagian galery */
+
+/* bagian footer */
+.div-footer {
+    margin-top: 250px;
+    height: 250px;
+}
+
+.text-white p {
+    font-size: large;
+    letter-spacing: 1px;
+}
+
+/* akhir bagian footer */
